@@ -7,6 +7,37 @@ Dark green: #28b485
 
 */
 /*****************************     
+            Animation
+******************************/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+/*****************************     
             Reset
 ******************************/
 * {
@@ -22,6 +53,7 @@ body {
   color: #777;
   padding: 30px; }
 
+@impor @import "pages/home";
 /*****************************     
             Header
 ******************************/
@@ -109,34 +141,3 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
-
-/*****************************     
-            Animation
-******************************/
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px); }
-  80% {
-    transform: translateX(10px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px); }
-  80% {
-    transform: translateX(-10px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes moveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(30px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
