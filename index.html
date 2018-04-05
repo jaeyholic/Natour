@@ -15,12 +15,14 @@
     <body>
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-            <label for="navi-toggle" class="Navigation__button">MENU</label>
+            <label for="navi-toggle" class="navigation__button">
+                <spam class="navigation__icon"></spam>
+            </label>
 
             <div class="navigation__background">&nbsp;</div>
 
             <ul class="navigation__nav">
-                <ul class="navigation__link">
+                <ul class="navigation__list">
                     <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natour</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
@@ -41,7 +43,7 @@
                     <span class="heading-primary--sub">is where life happens</span>
                 </h1>
 
-                <a href="" class="btn btn--white btn--animated">Discover our tours</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>
 
@@ -134,7 +136,7 @@
                 </div>
             </section>
 
-            <section class="section-tour">
+            <section class="section-tour" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most popular tours
@@ -170,7 +172,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +206,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$497</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -238,7 +240,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$897</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -374,5 +376,24 @@
                 </div>
             </div>
         </footer>
+        
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img class="popup__img" src="img/nat-8.jpg" alt="Tour Photo">
+                    <img class="popup__img" src="img/nat-9.jpg" alt="Tour Photo">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking.</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat odio facilisis mauris sit amet massa. Integer feugiat scelerisque varius morbi enim nunc faucibus. Id velit ut tortor pretium viverra suspendisse. Tincidunt tortor aliquam nulla facilisi cras fermentum. Odio facilisis mauris sit amet. Vivamus arcu felis bibendum ut tristique et egestas. Semper viverra nam libero justo laoreet sit amet. Nullam vehicula ipsum a arcu cursus vitae congue. In nibh mauris cursus mattis molestie a iaculis. Aliquam vestibulum morbi blandit cursus risus at ultrices. Cursus eget nunc scelerisque viverra. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Facilisis sed odio morbi quis commodo odio aenean. Aliquam id diam maecenas ultricies mi eget mauris pharetra. Nulla pellentesque dignissim enim sit amet. 
+                    </p>
+
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
